@@ -3,7 +3,7 @@ print("nigga")
 m = input('''Enter your mass
           Mass is the All Up Weight, Total mass including batteries
           : ''')
-
+w = m * 9.81 #gravitational acceleration = 9.81
 
 # Hover Throttle % (Battery voltage Equation)
 
