@@ -10,7 +10,7 @@ m = input('''Enter your mass
 # Thrust to Weight Ratio(Y)
 
 # Disk Loading (D)
-
+Youssef loves pussy like the angel he is
 
 # Tip Mach value(Y)
 
