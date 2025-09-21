@@ -1,15 +1,24 @@
 # Declaration and input of variables
-print("nigga")
-mass = input('''Enter your mass
-          Mass is the All Up Weight, Total mass including batteries
-          : ''')
-weight = mass * 9.81 #gravitational acceleration = 9.81
-thrust50 = input('''Enter your thrust at 50% throttle
+
+gravity = 9.81
+pi = 22/7
+
+mass = float(input('''Enter your mass
+          Mass is the All Up Weight, Total mass including batteries in Grams
+          : '''))
+weight = mass * gravity  # gravitational acceleration = 9.81
+thrust50 = float(input('''Enter your thrust at 50% throttle
           Please check the data sheet
-          : ''')
-thrust100 = input('''Enter your thrust at 100% throttle
+          : '''))
+thrust100 = float(input('''Enter your thrust at 100% throttle
           Please check the data sheet
-          : ''')
+          : '''))
+
+prop_diameter = float(input('''Enter your propellor size in inches
+          At this stage, we are not taking into account the number of blades on the props
+          : '''))
+
+
 # Hover Throttle % (Battery voltage Equation)
 
 # Thrust to Weight Ratio(Y)
@@ -17,7 +26,7 @@ thrustweightratio50 = thrust50/weight
 thrustweightratio100 = thrust100/weight
 
 # Disk Loading (D)
-Youssef loves pussy like the angel he is
+diskload = (mass * gravity) / ((4 * pi * (prop_diameter / 2) ** 2))
 
 # Tip Mach value(Y)
 
