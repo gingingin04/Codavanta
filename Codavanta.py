@@ -51,9 +51,9 @@ mm_to_inch = 0.0393701
 if prop_unit == 1:
     prop_diameter = prop_diameter
 else:
-    prop_diameter = prop_unit * 25.4
+    prop_diameter = (prop_unit * 25.4) / 1000
 
-diskload = (kg_mass * gravity) / ((prop_num * pi * (prop_diameter / 2) ** 2))
+diskload = (kg_mass * gravity) / ((pi * (prop_diameter / 2) ** 2))
 
 print("the diskload is", diskload, "it is in grams per inch")
 print(prop_diameter)
