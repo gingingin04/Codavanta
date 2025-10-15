@@ -1,13 +1,18 @@
 # Declaration and input of variables
 
+# CONSTANTS
 gravity = 9.81
 pi = 22/7
 a = 343  # speed of sound in m/s
+rho_motor = 2500
+motor_magnet_thickness = 1.5
+
 freestyle = 0
 cinematic = 0
 long_range = 0
 racing = 0
 
+# INPUTS
 mass = float(input('''Enter your mass
           Mass is the All Up Weight, Total mass including batteries in \033[1mGrams\033[0m
           : '''))
@@ -24,6 +29,7 @@ prop_unit = float(input('''Enter your prop size unit
                        1. in \033[1mmm\033[0m
                        2. in \033[1minches\033[0m
                        : '''))
+fpv = float(input("will you be using an analog or digital camera system: "))
 
 
 if prop_unit == 1:
@@ -125,14 +131,17 @@ elif 0.3 < M_tip <= 0.6:
     print("this is a racing quad")
     racing += 1
 print()
-# Power Draw @ Hover and Cruising (D)
-print()
+# Power Budgeting
 
-print(f"Powerdraw at hover is {Power_draw_hover} watts")
 
 print()
 # Motor Torque VS Prop Inertia match (Y)
 print()
 motor_torque = Power_draw_hover / (rpm * (2 * pi / 60))
 
+prop_inertia = rho_motor *
+
 print()
+
+
+# Chris rosser, how to choose the right motors
